@@ -2,13 +2,15 @@ this.jsodemo = (function() {
     var token = null;
     window.loginType = "unset";
     var dataportenCallback = "";
+    var dataportenClientId = "";
     if (document.location.hostname == "localhost") {
         dataportenCallback = 'http://localhost:8880/etsikt.github.io/jsodemo/index.html';
+    var dataportenClientId = 'ae8d7e75-5065-4694-a7fd-92d9bc47a090';
     } else {
         dataportenCallback = 'https://etsikt.github.io/jsodemo/index.html';
+    var dataportenClientId = '82c12d08-1463-402b-a078-8eb0f6a2453e';
     }
     
-    var dataportenClientId = '82c12d08-1463-402b-a078-8eb0f6a2453e';
     var request = ['openid', 'profile'];
     var userinfoEndpoint = "https://auth.dataporten.no/userinfo";
     var opts = {
