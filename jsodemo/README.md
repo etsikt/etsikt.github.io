@@ -8,12 +8,12 @@ Try it out here: https://etsikt.github.io/jsodemo/index.html
 ## Setup
 Specify oauth parameters in the jsodemo.js file. Example:
 
-````
+```
     var dataportenCallback = 'http://localhost:8880/jsodemo/index.html';
     var dataportenClientId = 'ae8d7e75-5065-4694-a7fd-92d9bc47a090';
     var request = ['openid', 'profile'];
     var userinfoEndpoint = "https://auth.dataporten.no/userinfo";
-```
+
 
 ## How to
 
