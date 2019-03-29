@@ -1,7 +1,13 @@
 this.jsodemo = (function() {
     var token = null;
     window.loginType = "unset";
-    var dataportenCallback = 'http://localhost:8880/etsikt.github.io/jsodemo/index.html';
+    var dataportenCallback = "";
+    if (document.location.hostname == "localhost") {
+        dataportenCallback = 'http://localhost:8880/etsikt.github.io/jsodemo/index.html';
+    } else {
+        dataportenCallback = 'https://etsikt.github.io/jsodemo/index.html';
+    }
+    
     var dataportenClientId = 'ae8d7e75-5065-4694-a7fd-92d9bc47a090';
     var request = ['openid', 'profile'];
     var userinfoEndpoint = "https://auth.dataporten.no/userinfo";
