@@ -13,6 +13,7 @@ Specify oauth parameters in the jsodemo.js file. Example:
     var dataportenClientId = 'ae8d7e75-5065-4694-a7fd-92d9bc47a090';
     var request = ['openid', 'profile'];
     var userinfoEndpoint = "https://auth.dataporten.no/userinfo";
+```
 
 
 ## How to
